@@ -1,1 +1,1 @@
-# eu-wikimedia-consumer
+# wikimedia-eu-consumer

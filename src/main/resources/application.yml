@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: wikimedia-eu-consumer
+  kafka:
+    bootstrap-servers: # kafka-server
+    consumer:
+      group-id: wikimedia-eu-consumer
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  mongodb:
+    uri: # mongo uri
+  data:
+    redis:
+      host: #redis server
+      port: #redis port
+      password: #insert password
