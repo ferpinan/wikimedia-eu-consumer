@@ -8,8 +8,6 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.CompoundIndex;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.Map;
-
 @Data
 @Document(collection = "wiki_events")
 @CompoundIndex(name = "idx_wiki_day", def = "{'wiki': 1, 'timestamp': -1}")
@@ -74,7 +72,7 @@ public class WikimediaEventEntity {
     private String logAction;
 
     @JsonProperty("log_params")
-    private Map<String, Object> logParams;
+    private Object logParams;
 
     @JsonProperty("log_action_comment")
     private String logActionComment;
