@@ -15,3 +15,40 @@ spring:
       host: #redis server
       port: #redis port
       password: #insert password
+wikimedia-eu-consumer:
+  topic: wikimedia.recentchange.eu
+  group-id: wikimedia-eu-consumer
+  excluded-namespaces:
+    - "Media"
+    - "Berezi"
+    - "Eztabaida"
+    - "Lankide"
+    - "Lankide eztabaida"
+    - "Wikipedia"
+    - "Wikipedia eztabaida"
+    - "Fitxategi"
+    - "Fitxategi eztabaida"
+    - "MediaWiki"
+    - "MediaWiki eztabaida"
+    - "Txantiloi"
+    - "Txantiloi eztabaida"
+    - "Laguntza"
+    - "Laguntza eztabaida"
+    - "Kategoria"
+    - "Kategoria eztabaida"
+    - "Atari"
+    - "Atari eztabaida"
+    - "Wikiproiektu"
+    - "Wikiproiektu eztabaida"
+    #- "Txikipedia"
+    - "Txikipedia eztabaida"
+    - "Zerrenda"
+    - "Zerrenda eztabaida"
+    - "TimedText"
+    - "TimedText talk"
+    - "Modulu"
+    - "Modulu eztabaida"
+    - "Event"
+    - "Event talk"
+    - "Topic"
+
